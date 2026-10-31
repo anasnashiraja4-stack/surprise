@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Surprise for You 💗</title>
+
+    <meta name="theme-color" content="#ffe4ed">
+    <meta name="description" content="A little surprise made just for you.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Pacifico&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BACKGROUND DECORATION -->
+    <div class="background-hearts" id="backgroundHearts"></div>
+
+    <!-- MUSIC PLAYER -->
+    <div class="music-player">
+        <img
+            src="assets/kaset.png"
+            alt="Kaset musik"
+            class="cassette"
+            id="cassette"
+        >
+
+        <div class="music-info">
+            <span class="music-label">OUR LITTLE SOUNDTRACK</span>
+            <span class="music-title">SZA - Saturn ♡</span>
+        </div>
+
+        <button id="musicButton" class="music-button" type="button">
+            ▶
+        </button>
+
+        <audio id="backgroundMusic" loop preload="none">
+            <source src="assets/SZASaturn.mp3" type="audio/mpeg">
+            Browser kamu tidak mendukung audio.
+        </audio>
+    </div>
+
+    <!-- MAIN PAGE -->
+    <main class="container">
+
+        <section class="welcome-section" id="welcomeSection">
+
+            <div class="sparkle sparkle-one">✦</div>
+            <div class="sparkle sparkle-two">♡</div>
+            <div class="sparkle sparkle-three">✧</div>
+
+            <div class="top-label">
+                ✿ A LITTLE WEBSITE MADE WITH LOVE ✿
+            </div>
+
+            <div class="cat-container">
+                <img
+                    src="assets/catlove2.png"
+                    alt="Kucing menyambut kamu"
+                    class="welcome-cat cat-left"
+                >
+
+                <img
+                    src="assets/catlove.png"
+                    alt="Kucing penuh cinta"
+                    class="welcome-cat cat-right"
+                >
+            </div>
+
+            <h1>
+                Hiii, my <span>bebeb!</span>
+            </h1>
+
+            <p class="welcome-description">
+                I made something special<br>
+                just for you ♡
+            </p>
+
+            <div class="tiny-hearts">
+                ♡　✿　♡　✧　♡
+            </div>
+
+            <button class="primary-button" id="goToLetter" type="button">
+                OPEN YOUR SURPRISE 💌
+            </button>
+
+            <p class="small-note">
+                made with lots of love, just for you ♡
+            </p>
+
+        </section>
+
+        <!-- LETTER SECTION -->
+        <section class="letter-section hidden" id="letterSection">
+
+            <div class="section-label">
+                ✉ YOUR LITTLE LOVE LETTER
+            </div>
+
+            <h2>A letter for you ♡</h2>
+
+            <p class="letter-instruction" id="letterInstruction">
+                Psst... tap the envelope to open it!
+            </p>
+
+            <button
+                class="envelope-button"
+                id="envelopeButton"
+                type="button"
+                aria-label="Buka surat cinta"
+            >
+                <img
+                    src="assets/suratketutup.png"
+                    alt="Surat yang masih tertutup"
+                    id="envelopeImage"
+                    class="envelope-image"
+                >
+            </button>
+
+            <article class="letter-content hidden" id="letterContent">
+
+                <div class="letter-paper">
+
+                    <div class="letter-decoration">♡ ✿ ♡</div>
+
+                    <h3>To my favorite person,</h3>
+
+                    <p>
+                        Hiiii, my bebeb! 💗
+                    </p>
+
+                    <p>
+                        Aku bikin sesuatu yang kecil ini khusus buat kamu.
+                        Mungkin cuma sebuah website sederhana, tapi aku
+                        berharap ini bisa bikin kamu senyum.
+                    </p>
+
+                    <p>
+                        Aku pengen kita punya lebih banyak cerita,
+                        lebih banyak foto, lebih banyak makanan enak,
+                        dan lebih banyak waktu buat dihabiskan bareng.
+                    </p>
+
+                    <p>
+                        Jadiii, sekarang aku mau ngajak kamu merencanakan
+                        little date kita!
+                    </p>
+
+                    <p>
+                        Kamu bebas pilih apa yang kamu mau, yaa.
+                        Yang penting kita bisa bikin kenangan baru bareng ♡
+                    </p>
+
+                    <div class="letter-signature">
+                        With lots of love,<br>
+                        <span>your favorite person ♡</span>
+                    </div>
+
+                </div>
+
+                <button
+                    class="primary-button date-button"
+                    id="openChoices"
+                    type="button"
+                >
+                    LET'S PLAN OUR DATE 💗
+                </button>
+
+            </article>
+
+        </section>
+
+        <!-- DATE PLANNER -->
+        <section class="planner-section hidden" id="plannerSection">
+
+            <div class="section-label">
+                ♡ OUR LITTLE DATE ♡
+            </div>
+
+            <h2>Let's make memories!</h2>
+
+            <p class="planner-description">
+                Choose what you want, my bebeb 🌷
+            </p>
+
+            <div class="choice-grid">
+
+                <button class="choice-card" data-choice="food" type="button">
+                    <img src="assets/makan.png" alt="">
+                    <span class="choice-title">Food Date</span>
+                    <span class="choice-description">
+                        What should we eat? 🍰
+                    </span>
+                    <span class="choice-arrow">TELL ME ♡ →</span>
+                </button>
+
+                <button class="choice-card" data-choice="photo" type="button">
+                    <img src="assets/iconfoto.png" alt="">
+                    <span class="choice-title">Photobooth</span>
+                    <span class="choice-description">
+                        Where should we go? 📸
+                    </span>
+                    <span class="choice-arrow">TELL ME ♡ →</span>
+                </button>
+
+                <button class="choice-card" data-choice="message" type="button">
+                    <img src="assets/loveu.png" alt="">
+                    <span class="choice-title">Your Message</span>
+                    <span class="choice-description">
+                        Something to tell me? 💌
+                    </span>
+                    <span class="choice-arrow">TELL ME ♡ →</span>
+                </button>
+
+            </div>
+
+            <div class="progress-card">
+                <p class="progress-title">Our little checklist ♡</p>
+
+                <div class="progress-track">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+
+                <p id="progressText">0 of 3 completed</p>
+            </div>
+
+            <button class="primary-button summary-button"
+                    id="showSummary"
+                    type="button">
+                SEE OUR DATE PLAN ✨
+            </button>
+
+        </section>
+
+        <!-- FINAL SUMMARY -->
+        <section class="summary-section hidden" id="summarySection">
+
+            <div class="summary-card">
+
+                <div class="summary-icon">💗</div>
+
+                <h2>Our Little Date Plan</h2>
+
+                <p class="summary-subtitle">
+                    A little plan for our next memories ♡
+                </p>
+
+                <div class="summary-item">
+                    <span>🍰 FOOD DATE</span>
+                    <p id="summaryFood">Not decided yet</p>
+                </div>
+
+                <div class="summary-item">
+                    <span>📸 PHOTOBOOTH</span>
+                    <p id="summaryPhoto">Not decided yet</p>
+                </div>
+
+                <div class="summary-item">
+                    <span>💌 YOUR MESSAGE</span>
+                    <p id="summaryMessage">Not decided yet</p>
+                </div>
+
+                <button class="primary-button"
+                        id="sharePlan"
+                        type="button">
+                    SHARE OUR PLAN 💌
+                </button>
+
+                <button class="secondary-button"
+                        id="editPlan"
+                        type="button">
+                    EDIT MY ANSWERS
+                </button>
+
+            </div>
+
+        </section>
+
+        <footer class="page-footer">
+            <p>made with ♡, just for you</p>
+            <span>୨୧ ────────── ୨୧</span>
+        </footer>
+
+    </main>
+
+    <!-- POPUP -->
+    <div class="modal-overlay hidden" id="modalOverlay">
+
+        <div class="modal-box"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="modalTitle">
+
+            <button
+                class="close-modal"
+                id="closeModal"
+                type="button"
+                aria-label="Tutup popup"
+            >×</button>
+
+            <div class="modal-emoji" id="modalEmoji">🍰</div>
+
+            <h2 id="modalTitle">What do you want to eat?</h2>
+
+            <p class="modal-description" id="modalDescription">
+                Tell me your favorite food ♡
+            </p>
+
+            <form id="answerForm">
+
+                <label for="answerInput" id="answerLabel">
+                    Your answer
+                </label>
+
+                <textarea
+                    id="answerInput"
+                    rows="4"
+                    maxlength="1000"
+                    placeholder="Type your answer here..."
+                    required
+                ></textarea>
+
+                <p class="input-hint">
+                    Jawabanmu tersimpan di browser ini.
+                </p>
+
+                <button class="primary-button save-button" type="submit">
+                    SAVE MY ANSWER ♡
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- FLOWER AND HEART ANIMATIONS -->
+    <div id="celebrationLayer" aria-hidden="true"></div>
+
+    <div class="toast hidden" id="toast"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
